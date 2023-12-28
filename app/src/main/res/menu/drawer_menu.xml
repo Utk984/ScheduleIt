@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="Account">
+        <menu>
+            <item
+                android:id="@+id/nav_account"
+                android:icon="@drawable/profile"
+                android:title="Profile"
+                android:visible="true" />
+            <item android:id="@+id/nav_password"
+                android:icon="@drawable/locker"
+                android:title="Change Password"/>
+            <item android:id="@+id/nav_logout"
+                android:icon="@drawable/logout"
+                android:title="Log Out"/>
+        </menu>
+    </item>
+
+    <item android:title="Other">
+        <menu>
+            <item android:id="@+id/nav_about"
+                android:title="About the app"
+                android:icon="@drawable/ic_applogo"/>
+            <item android:id="@+id/nav_share"
+                android:title="Share"
+                android:icon="@drawable/ic_baseline_share_24"/>
+            <item android:id="@+id/nav_rate"
+                android:icon="@drawable/ic_rate"
+                android:title="Rate the app"/>
+            <item android:id="@+id/nav_message"
+                android:icon="@drawable/gmail_new_logo_icon"
+                android:title="Contact us"/>
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.app.scheduleit">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+    <application
+        android:name="com.app.scheduleit.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/schedule"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/schedule_round"
+        android:stopWithTask="false"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ScheduleIt"
+        android:windowSoftInputMode="adjustResize">
+        <activity android:name="com.app.scheduleit.TaskDetails"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.app.scheduleit.AboutApp" />
+        <activity
+            android:name="com.app.scheduleit.PasswordScreen"
+            android:parentActivityName="com.app.scheduleit.MainScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.app.scheduleit.ProfileScreen"
+            android:parentActivityName="com.app.scheduleit.MainScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.app.scheduleit.ForgotPasswordScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.app.scheduleit.MainScreen"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.app.scheduleit.WelcomeScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.app.scheduleit.LoginScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.app.scheduleit.MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name="com.app.scheduleit.AlertReceiver"
+            android:exported="true"
+            android:enabled="true"/>
+
+        <receiver android:name="com.app.scheduleit.NotificationAction"
+            android:exported="true"
+            android:enabled="true"/>
+
+        <service android:name="com.app.scheduleit.textreceive"/>
+
+        <service android:name="com.app.scheduleit.Action"/>
+
+        <receiver android:name="com.app.scheduleit.AlertReceiver2"
+            android:exported="true"
+            android:enabled="true"/>
+
+        <receiver android:name="com.app.scheduleit.NotificationAction2"
+            android:exported="true"
+            android:enabled="true"/>
+
+        <service android:name="com.app.scheduleit.textreceive2"/>
+
+        <service android:name="com.app.scheduleit.Action2"/>
+
+        <meta-data
+            android:name="com.parse.SERVER_URL"
+            android:value="@string/back4app_server_url" />
+        <meta-data
+            android:name="com.parse.APPLICATION_ID"
+            android:value="@string/back4app_app_id" />
+        <meta-data
+            android:name="com.parse.CLIENT_KEY"
+            android:value="@string/back4app_client_key" />
+    </application>
+
+</manifest>

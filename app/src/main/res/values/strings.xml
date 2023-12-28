@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Schedule It</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="back4app_server_url">https://parseapi.back4app.com/</string>
+
+    <!-- Change the following strings as required -->
+    <string name="back4app_app_id">gX8jIfE3k8SYHchhvDuUtQVvpOxdKq6hkHvvPiTm</string>
+    <string name="back4app_client_key">zAj798AzMV8lglAmVrF9tdWWRdL0lqAkOtcZB27h</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
