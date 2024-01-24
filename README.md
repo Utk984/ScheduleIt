@@ -5,7 +5,7 @@ Schedule It is a personal task and time management app to help users stay organi
 ## Overview
 
 ### Key features:
-Create personalized to-do lists for today, tomorrow, and later
+- Create personalized to-do lists for today, tomorrow, and later
 Add, update, and remove tasks any time
 Mark tasks as complete to strike them off
 Set reminders for tasks (once, daily, weekly)
